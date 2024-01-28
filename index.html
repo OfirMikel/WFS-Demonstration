@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wave Function Collapse</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anek+Latin:wght@200;700&display=swap"
+      rel="stylesheet"
+      />
+    <link rel="icon" type="/images/other/logo.png" href="/images/other/logo.png" />
+   
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css">
+    <link rel="stylesheet" href="/styles/layout.css">
+    <link rel="stylesheet" href="/styles/page1.css" />
+    <link rel="stylesheet" href="/styles/page1-phone.css" />
+    <link rel="stylesheet" href="/styles/page2.css" />
+    <link rel="stylesheet" href="/styles/page2-phone.css" />
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0%;
+        scroll-behavior: smooth;
+      }
+      .container1 {
+        padding: 2%;
+        grid-column: 3 / 4;
+        grid-row: 3 / 4;
+        aspect-ratio: 1;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+      }
+
+      .grid-container {
+        display: grid;
+        border: 5px solid black;
+        height: max-content;
+        background-color: #05690A;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+      }
+
+      .grid-cell {
+        object-fit: contain;
+      }
+
+      .img {
+        max-width: 100%;
+        max-height: 100%;
+        aspect-ratio: 1;
+        min-width: none;
+        min-height: none;
+        object-fit: contain;
+      }
+    </style>
+
+  </head>
+  <body>
+   <!-- Home Page  -->
+   <div class="image-back">
+      <nav>
+        <div class="navbar-container">
+          <div class="logo-navbar-container">
+            <img src="/images/other/logo.png" alt="logo" class="logo" />
+            <h2 class="white text-style1">ioCode</h2>
+          </div>
+    
+          <a class="text-style2 white margin-30" style="text-decoration: none">Home</a>
+          <a class="text-style2 white" style="text-decoration: none" id="homeButton">Demonstration</a>
+          <a class="text-style2 white" style="text-decoration: none" id="algorithmButton">Algorithm</a>
+          <a class="text-style2 white" style="text-decoration: none" id="aboutButton">About</a>
+        </div>
+        <hr class="line" />
+      </nav>
+      <div class="page-container">
+        <h1 class="headline big-text" id="wave">WAVE</h1>
+        <h1 class="headline mid-text" id="func">FUNCTION COLLAPSE</h1>
+        <img src="/images/other/atom.png" alt="atom image" class="image-atom" />
+        <button class="button-28" id="scrollButton" role="button">See Demonstration</button>
+      </div>
+    </div>
+         
+    <!-- Demonstration Page  -->
+    <div class="demonstration" id="scrollTarget">
+      <h2 class="semi-headline" id="headline-demo">Demonstration</h2>
+      <hr class="line2" />
+      <div class="matrix-size-exp">
+        <h2 class="text-exp">Matrix size</h2>
+        <br />
+        <h3 class="text-exp-small">
+          In the Wave Function Collapse algorithm, expanding the matrix size adds detail and <br>
+          complexity to the generated output, reducing the matrix size simplifies the output,<br>
+          yielding more abstract results. This flexibility enables precise control over the <br>
+          algorithm.
+          <br> 
+          <br> 
+          To change the matrix you can use the slider below and press the run algorithm button to run WFS.
+        </h3>
+        <div class="range-slider-container">
+          <div>
+            <span id="rangeValue">5</span>
+            <input class="range" type="range" name="sliderValue" value="5" min="2"  max="25"  oninput="updateRangeValue(this.value)"></input>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="button-29" id="submitButton">Run Algorithm</button>
+        </div>
+      </div>
+
+      <div class="container1">
+        <div class="grid-container">
+        </div>
+      </div>
+    </div>
+    <!-- Algorithm Page  -->
+    <algorithm id="algorithm">
+      <div class="algorithm-page">
+        <hr class="line3" />
+        <h2 id="semi-healine2" style="margin-left: 3%">Algorithm</h2>
+        <hr class="line4" />
+        <div style="margin-left: 3%">
+          <h3 class="text-exp-small" style="width: 80%">
+            The Wavefunction Collapse Algorithm teaches your computer how to riff. The algorithm takes
+            in an archetypical input, and produces procedurally-generated outputs that look like it.
+          </h3>
+          <br />
+          <h3 class="text-exp-small" style="width: 80%">
+            In programming, the Wave Function Collapse Algorithm is a versatile tool for generating
+            complex patterns based on an example input. It doesn't rely on neural networks or complex
+            machine learning methods, making it an intuitive choice for those seeking clear and
+            effective procedural generation. The algorithm works by collapsing a wavefunction that
+            represents potential choices, with each choice affecting the entire output. The process is
+            akin to solving a puzzle, where the algorithm follows a set of rules to generate output that
+            matches the input's patterns. To delve into the algorithm in detail
+          </h3>
+          <br />
+          <br />
+          <a
+            class="text-exp-small"
+            href="https://robertheaton.com/2018/12/17/wavefunction-collapse-algorithm/"
+            >We recommend exploring the comprehensive explanation provided in this article.
+          </a>
+        </div>
+      </div>
+    </algorithm>
+    <!-- About Page  -->
+
+    <about id="about">
+      <div class="algorithm-page">
+        <hr class="line3" />
+        <h2 id="semi-healine2" style="margin-left: 3%">About Me</h2>
+        <hr class="line4" />
+        <div style="margin-left: 3%">
+          <h3 class="text-exp-small" style="width: 80%">
+            Hello there! I'm Ofir, and I'm thrilled to welcome you to my corner of the web. I'm not just
+            a computer science student; I'm a passionate software developer with a love for both
+            frontend development and algorithms.
+          </h3>
+          <br />
+          <h3 class="text-exp-small" style="width: 80%">
+            My path in the world of computer science has been a journey of discovery, challenges, and
+            continuous learning. I'm currently pursuing my degree in Computer Science, and every day,
+            I'm expanding my knowledge and honing my skills in this ever-evolving field.
+          </h3>
+          <br />
+          <h3 class="text-exp-small" style="width: 80%">
+            If you share my passion for coding or if you're interested in collaboration, let's connect!
+            Together, we can explore the endless possibilities of software development and create
+            amazing digital experiences.
+          </h3>
+          <br />
+          <h3 class="text-exp-small" style="width: 80%">
+            Thank you for visiting my website, and I look forward to connecting with you on this
+            exciting journey.
+          </h3>
+          <br />
+        </div>
+      </div>
+    </about>
+      <!-- Footer Page  -->
+      <footer>
+         <div class="waves">
+           <div class="wave" id="wave1"></div>
+           <div class="wave" id="wave2"></div>
+           <div class="wave" id="wave3"></div>
+           <div class="wave" id="wave4"></div>
+         </div>
+         <ul class="social_icon">
+           <li>
+             <a href="https://www.linkedin.com/in/ofir-mikel-72b15b242/"
+               ><ion-icon name="logo-linkedin"></ion-icon
+             ></a>
+           </li>
+           <li>
+             <a href="https://ofirmikel.github.io/Portfolio/"
+               ><img
+                 src="images/other/portfolio.png"
+                 alt="image portfolio"
+                 style="width: 35px; aspect-ratio: 1; margin-bottom: 10px"
+             /></a>
+           </li>
+         </ul>
+       
+         <p class="copyright">Thank you for visiting ioCode WFS website</p>
+       </footer>
+
+       
+  </body>
+  <!-- Scripting -->
+
+  <script type="module" src="/js/tile.js"></script>
+  <script type="module" src="/js/waveFunction.js"></script>
+  <script type="module" src="/js/cell.js"></script>
+  <script>
+    updateRangeValue(5);
+    function updateRangeValue(value) {
+      document.getElementById("rangeValue").textContent = value;
+      const sliderValue = value;
+
+      const gridContainer = document.querySelector(".grid-container");
+      gridContainer.style.gridTemplateColumns = `repeat(${sliderValue}, 1fr)`;
+      gridContainer.style.gridTemplateRows = `repeat(${sliderValue}, 1fr)`;
+
+      while (gridContainer.firstChild) {
+        gridContainer.removeChild(gridContainer.firstChild);
+      }
+
+      for (let i = 0; i < sliderValue * sliderValue; i++) {
+        const newCell = document.createElement("div");
+        newCell.className = "grid-cell";
+        const img = document.createElement("img");
+        img.src = "/images/other/tile3.png";
+        img.alt = "Image";
+        img.className = "img";
+        img.id = i;
+        newCell.appendChild(img);
+        gridContainer.appendChild(newCell);
+      }
+    }
+  </script>
+  <script type="module">
+    import WaveFunction from "/js/waveFunction.js";
+    document.getElementById("submitButton").addEventListener("click", function () {
+      const sliderValue = document.querySelector(".range").value;
+      updateRangeValue(sliderValue);
+      let waveFunction = new WaveFunction(sliderValue);
+      waveFunction.run();
+    });
+  </script>
+  <script>
+    document.getElementById("scrollButton").addEventListener("click", function () {
+      const targetSection = document.getElementById("scrollTarget");
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("homeButton").addEventListener("click", function () {
+      const targetSection = document.getElementById("scrollTarget");
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    document.getElementById("algorithmButton").addEventListener("click", function () {
+      const targetSection = document.getElementById("algorithm");
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    });
+
+    
+    document.getElementById("aboutButton").addEventListener("click", function () {
+      const targetSection = document.getElementById("about");
+      targetSection.scrollIntoView({ behavior: "smooth" });
+    });
+  </script>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>
