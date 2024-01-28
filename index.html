@@ -214,9 +214,9 @@
   </body>
   <!-- Scripting -->
 
-  <script type="module" src="/js/tile.js"></script>
-  <script type="module" src="/js/waveFunction.js"></script>
-  <script type="module" src="/js/cell.js"></script>
+  <script type="module" src="assets/js/tile.js"></script>
+  <script type="module" src="assets/js/waveFunction.js"></script>
+  <script type="module" src="assets/js/cell.js"></script>
   <script>
     updateRangeValue(5);
     function updateRangeValue(value) {
@@ -245,7 +245,7 @@
     }
   </script>
   <script type="module">
-    import WaveFunction from "/js/waveFunction.js";
+    import WaveFunction from "./assets/js/waveFunction.js";
     document.getElementById("submitButton").addEventListener("click", function () {
       const sliderValue = document.querySelector(".range").value;
       updateRangeValue(sliderValue);

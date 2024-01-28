@@ -1,5 +1,5 @@
-import Tile from "../js/tile.js";
-import Cell from "../js/cell.js";
+import Tile from "./tile.js";
+import Cell from "./cell.js";
 
 class WaveFunction {
   constructor(cellAmount, options) {
