@@ -319,7 +319,8 @@ class WaveFunction {
     if (rotation == undefined) {
       rotation = 0;
     }
-    const newImageSrc = `../assets/images/tiles/Tiles1/${imageNum}/${rotation}.png`;
+    ("./assets");
+    const newImageSrc = `assets/images/tiles/Tiles1/${imageNum}/${rotation}.png`;
     let image = $(`#${id}`);
     image.attr("src", newImageSrc);
   }
