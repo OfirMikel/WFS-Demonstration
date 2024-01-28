@@ -218,6 +218,7 @@
   <script type="module" src="assets/js/waveFunction.js"></script>
   <script type="module" src="assets/js/cell.js"></script>
   <script>
+    
     updateRangeValue(5);
     function updateRangeValue(value) {
       document.getElementById("rangeValue").textContent = value;
@@ -235,6 +236,7 @@
         const newCell = document.createElement("div");
         newCell.className = "grid-cell";
         const img = document.createElement("img");
+        img.src = "assets/images/other/Tiles1";
         img.src = "assets/images/other/tile3.png";
         img.alt = "Image";
         img.className = "img";
