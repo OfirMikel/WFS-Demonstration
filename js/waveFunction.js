@@ -1,5 +1,5 @@
-import Tile from "/js/tile.js";
-import Cell from "/js/cell.js";
+import Tile from "../js/tile.js";
+import Cell from "../js/cell.js";
 
 class WaveFunction {
   constructor(cellAmount, options) {
@@ -263,7 +263,7 @@ class WaveFunction {
     if (rotation == undefined) {
       rotation = 0;
     }
-    const newImageSrc = `images/tiles/Tiles1/${imageNum}/${rotation}.png`;
+    const newImageSrc = `../assets/images/tiles/Tiles1/${imageNum}/${rotation}.png`;
     let image = $(`#${id}`);
     image.attr("src", newImageSrc);
   }
