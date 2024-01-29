@@ -4,7 +4,7 @@
 
 Welcome to WFS - Wave Function Simulation, an immersive project that delves into the synergy of quantum mechanics and video game development. This project showcases the practical application of the wave function collapse algorithm, offering an interactive journey into the quantum realm within the gaming universe.
 <p align="center">
-  <img src="[url_to_your_image](https://ofirmikel.github.io/WFS-Demonstration/assets/images/other/atom.png)" alt="WFS Logo">
+  <img src="https://ofirmikel.github.io/WFS-Demonstration/assets/images/other/atom.png" alt="WFS Logo">
 </p>
 
 
